@@ -1,0 +1,37 @@
+/* Fullscreen gradient background */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff7eb3, #a29bfe);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Background animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Clock container styling */
+.clock-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+/* Digital clock & countdown styles */
+#clock, #countdown {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
